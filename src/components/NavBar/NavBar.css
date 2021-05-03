@@ -24,13 +24,19 @@ footer {
 
 i {
   color: rgba(255, 76, 43, 0.7);
-  padding: 15px;
+  padding-top: -5px;
+  padding-bottom: -5px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .copyright {
   font-family: 'Cinzel', serif;
+  font-weight: 500;
+  font-size: 15px;
   color: #4f4f4f;
   height: 20px;
+  padding-bottom: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
