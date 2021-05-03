@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&display=swap');
+
+html, body {
+  height: 100vh;
+  background: radial-gradient(ellipse at left, #859398 0%, #000000 100%);
+  overflow: hidden;
+}
+
+.home {
+  font-family: 'Cinzel', serif;
+  font-weight: 500;
+  /* font-size: 20px; */
+  color: white;
+  letter-spacing: 1px;
+}
+
+.available-now {
+  margin-top: 50px;
+}
+
+.amazon-badge {
+  width: 140px;
+  height: 41.05px;
+  background-color: black;
+  border: 0.5px solid white;
+  border-radius: 8px;
+}
+
+.itunes-badge {
+  width: 140px;
+  height: 41.05px;
+  background-color: black;
+  border-radius: 8px;
+  border: 0.5px solid white;
+}
+
+.store-links {
+  display: flex;
+  justify-content: center;
+}
+
+.donate-button {
+  width: 220px;
+  height: 36px;
+  border-radius: 8px;
+  background-image: linear-gradient(to right, #45B649, #DCE35B);
+  border: 2px solid black;
+  color: black;
+  text-align: center;
+  box-shadow: 1px 1px 8px #2196f3;
+  font-weight: 600;
+}
