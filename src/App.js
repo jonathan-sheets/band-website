@@ -21,7 +21,7 @@ export default function App() {
           <Route component={Photos} path="/photos" />
           <Route component={Blog} path="/blog" />
           <Route component={Video} path="/video" />
-          <Route component={Shop} path="/shop" />
+          <Route component={Shop} path="/merch" />
       
         </BrowserRouter>
       </div>
