@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+Nav { 
+  font-family: 'Rock Salt', cursive;
+  letter-spacing: 2px;
+  text-shadow: 1px 0.5px #FF4B2B;
+  font-size: 15px;
+}
