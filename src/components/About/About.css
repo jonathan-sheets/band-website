@@ -1,0 +1,52 @@
+#about {
+  position: relative;
+  min-height: 100vh;
+}
+
+.about {
+  font-family: 'Cinzel', serif;
+  font-weight: 500;
+  color: #cdcbcb;
+  letter-spacing: 1px;
+  padding-bottom: 120px;
+}
+
+.about-band {
+  font-family: 'Rock Salt', cursive;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 900px;
+  text-align: left;
+}
+
+#band-photo {
+  max-width: 425px;
+  border-radius: 50px;
+  box-shadow: 0 0 15px #FF4B2B;
+  margin-bottom: 45px;
+}
+
+.band-photo {
+  /* max-width: 450px; */
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 512px) {
+  #band-photo {
+    width: 330px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .about-text {
+    margin-left: -50px;
+    margin-right: -50px;
+  }
+}
