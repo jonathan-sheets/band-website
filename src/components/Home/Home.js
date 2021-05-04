@@ -96,7 +96,7 @@ class Home extends React.Component {
             </Row>
           </Container>
           <Row>
-            <Col>
+            <Col className="donate-content">
               <div className="donate">
                 <p>If you like our music and want to hear more, consider being a hero and donate to the cause.
                    All donations go through PayPal and help us cover licensing and distribution costs.</p>

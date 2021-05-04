@@ -12,7 +12,7 @@ h4 {
 }
 
 span {
-  font-size: 18px;
+  /* font-size: 18px; */
   text-shadow: 1px 0.5px #FF4B2B;
 }
 
@@ -44,6 +44,7 @@ span {
 }
 
 .titles {
+  font-size: 18px;
   margin-top: 15px;
   margin-bottom: -15px;
 }
@@ -105,9 +106,14 @@ span {
 .donate {
   display: flex;
   justify-content: center;
-  max-width: 750px;
+  max-width: 650px;
   margin: 0 auto;
   padding-top: 50px;
+  font-size: 13px;
+}
+
+.donate-content {
+  margin-top: 40px;
 }
 
 .donate-action {
@@ -138,5 +144,14 @@ span {
 @media only screen and (max-width: 512px) {
   #covers-tributes, #wasted-hymn {
     width: 330px;
+  }
+  .donate-content {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 1344px) {
+  .singles {
+    margin-top: 25px;
   }
 }
