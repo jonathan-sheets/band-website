@@ -8,11 +8,11 @@ class NavBar extends React.Component {
   render() {
     return (
       <>
-        <Navbar sticky="top"  variant="dark" expand="lg" className="nav-bar">
+        <Navbar sticky="top"  variant="dark" expand="lg">
           <Navbar.Brand href="/">
             <img
               src={ASLogoRed}
-              height="70"
+              height="55"
               className="d-inline-block align-top"
               alt="Apathetic Superstar Logo"
             />
@@ -63,6 +63,7 @@ class NavBar extends React.Component {
       
       
         <footer>
+          <hr></hr>
           <div className="link-container"> 
             <div className="social-link">
               <a 

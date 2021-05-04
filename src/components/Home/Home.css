@@ -3,19 +3,76 @@
 html, body {
   height: 100vh;
   background: radial-gradient(ellipse at left, #859398 0%, #000000 100%);
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+h4 {
+  text-decoration: underline;
+}
+
+span {
+  font-size: 18px;
+  text-shadow: 1px 0.5px #FF4B2B;
+}
+
+#covers-tributes, #wasted-hymn {
+  max-width: 400px;
+  margin-left: 10px;
+  margin-right: 10px;
+  box-shadow: 5px 5px 10px black;
+  border-radius: 8px;
+}
+
+#home {
+  position: relative;
+  min-height: 100vh;
 }
 
 .home {
   font-family: 'Cinzel', serif;
   font-weight: 500;
-  /* font-size: 20px; */
-  color: white;
+  color: #cdcbcb;
   letter-spacing: 1px;
+  padding-bottom: 120px;
 }
 
 .available-now {
-  margin-top: 50px;
+  font-family: 'Rock Salt', cursive;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.titles {
+  margin-top: 15px;
+  margin-bottom: -15px;
+}
+
+.info-text {
+  min-height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.album-art {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#content {
+  max-width: 70%;
+}
+
+.albums, .singles {
+  margin: 0 auto;
+}
+
+.amazon, .iTunes {
+  border-radius: 8px;
 }
 
 .amazon-badge {
@@ -24,14 +81,20 @@ html, body {
   background-color: black;
   border: 0.5px solid white;
   border-radius: 8px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 10px;
 }
 
 .itunes-badge {
   width: 140px;
   height: 41.05px;
-  background-color: black;
+  /* background-color: black; */
   border-radius: 8px;
   border: 0.5px solid white;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-right: 10px;
 }
 
 .store-links {
@@ -39,14 +102,41 @@ html, body {
   justify-content: center;
 }
 
+.donate {
+  display: flex;
+  justify-content: center;
+  max-width: 750px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.donate-action {
+  display: flex;
+  justify-content: center;
+}
+
+.paypal {
+  color: #2196f3;
+  padding-top: 3px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
 .donate-button {
-  width: 220px;
+  font-family: 'Rock Salt', cursive;
+  width: 200px;
   height: 36px;
   border-radius: 8px;
   background-image: linear-gradient(to right, #45B649, #DCE35B);
   border: 2px solid black;
   color: black;
   text-align: center;
-  box-shadow: 1px 1px 8px #2196f3;
+  box-shadow: 1px 1px 10px #2196f3;
   font-weight: 600;
+}
+
+@media only screen and (max-width: 512px) {
+  #covers-tributes, #wasted-hymn {
+    width: 330px;
+  }
 }
