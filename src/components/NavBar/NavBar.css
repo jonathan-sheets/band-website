@@ -46,6 +46,11 @@ i {
   padding-right: 15px;
 }
 
+i:hover {
+  color: black;
+  transition: .75s ease-in-out;
+}
+
 .copyright {
   font-family: 'Cinzel', serif;
   font-weight: 500;
