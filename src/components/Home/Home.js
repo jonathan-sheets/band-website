@@ -6,7 +6,8 @@ import Col from 'react-bootstrap/Col';
 import AWastedHymn from '../../img/AWastedHymn.png';
 import CoversTributes from '../../img/CoversTributes.png';
 import AmazonMusicBadge from '../../img/AmazonMusicBadge.png';
-import iTunesStoreBuyBadge from '../../img/iTunesStoreBuyBadge.svg';
+import iTunesStoreBuyBadge from '../../img/iTunesStoreBuyBadge.png';
+import BandcampLogo128 from '../../img/BandcampLogo128.png';
 import './Home.css';
 
 class Home extends React.Component {
@@ -19,7 +20,7 @@ class Home extends React.Component {
         <Container fluid className="home">
           <Row className="available-now">
             <Col>
-              <h1>Avaliable Now</h1>
+              <h1 className="flash">Available Now</h1>
             </Col>
           </Row>
           <Container fluid id="content">
@@ -37,13 +38,22 @@ class Home extends React.Component {
                     <img id="covers-tributes" src={CoversTributes} alt="covers & tributes album artwork"></img>
                   </div>
                   <div className="store-links">
+                    <div className="bandcamp-badge">
+                      <a
+                        href="https://apatheticsuperstar.bandcamp.com/album/covers-tributes"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <img src={BandcampLogo128} className="bandcamp" alt="Get it on Bandcamp" width="106px"></img>
+                      </a>
+                    </div>
                     <div className="itunes-badge">
                       <a
                         href="https://music.apple.com/us/album/covers-tributes-ep/1488681660"
                         target="_blank"
                         rel="noreferrer"
                       >
-                        <img src={iTunesStoreBuyBadge} className="iTunes" alt="Buy it on apple music" width="138px"></img>
+                        <img src={iTunesStoreBuyBadge} className="iTunes" alt="Buy it on apple music" width="100px"></img>
                       </a>
                     </div>
                     <div className="amazon-badge">
@@ -52,7 +62,7 @@ class Home extends React.Component {
                         target="_blank"
                         rel="noreferrer"
                       >
-                        <img src={AmazonMusicBadge} className="amazon" alt="get it on amazon music" height="39px"></img>
+                        <img src={AmazonMusicBadge} className="amazon" alt="get it on amazon music" width="106px"></img>
                       </a>
                     </div>
                   </div>
@@ -72,13 +82,22 @@ class Home extends React.Component {
                     <img id="wasted-hymn" src={AWastedHymn} alt="a wasted hymn single artwork"></img>
                   </div>
                   <div className="store-links">
+                    <div className="bandcamp-badge">
+                      <a
+                        href="https://apatheticsuperstar.bandcamp.com/album/a-wasted-hymn"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <img src={BandcampLogo128} className="bandcamp" alt="Get it on Bandcamp" width="106px"></img>
+                      </a>
+                    </div>
                     <div className="itunes-badge">
                     <a
                         href="https://music.apple.com/us/album/a-wasted-hymn-single/1505096800"
                         target="_blank"
                         rel="noreferrer"
                     >
-                      <img src={iTunesStoreBuyBadge} className="iTunes" alt="Buy it on apple music" width="138px"></img>
+                      <img src={iTunesStoreBuyBadge} className="iTunes" alt="Buy it on apple music" width="100px"></img>
                     </a>
                     </div>
                     <div className="amazon-badge">
@@ -87,7 +106,7 @@ class Home extends React.Component {
                         target="_blank"
                         rel="noreferrer"
                       >
-                        <img src={AmazonMusicBadge} className="amazon" alt="get it on amazon music" height="39px"></img>
+                        <img src={AmazonMusicBadge} className="amazon" alt="get it on amazon music" width="106px"></img>
                       </a>
                     </div>
                   </div>
