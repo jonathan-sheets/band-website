@@ -67,6 +67,15 @@ class NavBar extends React.Component {
           <div className="link-container"> 
             <div className="social-link">
               <a 
+                  href="https://apatheticsuperstar.bandcamp.com/" 
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i className="fab fa-bandcamp fa-2x"></i>
+              </a>
+            </div>
+            <div className="social-link">
+              <a 
                   href="https://www.youtube.com/channel/UCaKQ-nP7QVz1ne04DiOoATg?view_as=subscriber" 
                   target="_blank"
                   rel="noreferrer"
