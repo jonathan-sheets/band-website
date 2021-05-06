@@ -1,0 +1,29 @@
+#shop {
+  position: relative;
+  min-height: 100vh;
+}
+
+#myShop {
+  padding-top: 30px;
+}
+
+#sprd-container {
+  margin-left: 50px;
+  margin-right: 50px;
+  box-shadow: 1px 1px 30px black;
+}
+
+.shop {
+  font-family: 'Cinzel', serif;
+  font-weight: 500;
+  color: #cdcbcb;
+  letter-spacing: 1px;
+  padding-bottom: 120px;
+}
+
+@media only screen and (max-width: 576px) {
+  #sprd-container {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
