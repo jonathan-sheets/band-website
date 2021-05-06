@@ -62,7 +62,7 @@ class NavBar extends React.Component {
         </Navbar>
       
       
-        <footer>
+        <footer id="my-footer">
           <hr></hr>
           <div className="link-container"> 
             <div className="social-link">
@@ -71,7 +71,7 @@ class NavBar extends React.Component {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <i className="fab fa-bandcamp fa-2x"></i>
+                  <i className="fab fa-bandcamp fa-2x icons"></i>
               </a>
             </div>
             <div className="social-link">
@@ -80,7 +80,7 @@ class NavBar extends React.Component {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <i className="fab fa-youtube fa-2x"></i>
+                  <i className="fab fa-youtube fa-2x icons"></i>
                 </a>
             </div>
             <div className="social-link">
@@ -89,7 +89,7 @@ class NavBar extends React.Component {
                 target="_blank"
                 rel="noreferrer"
               >
-                <i className="fab fa-instagram fa-2x"></i>
+                <i className="fab fa-instagram fa-2x icons"></i>
               </a>
             </div>
             <div className="social-link">
@@ -98,7 +98,7 @@ class NavBar extends React.Component {
                 target="_blank"
                 rel="noreferrer"
               >
-                <i className="fab fa-soundcloud fa-2x"></i>
+                <i className="fab fa-soundcloud fa-2x icons"></i>
               </a>
             </div>
             <div className="social-link">
@@ -107,7 +107,7 @@ class NavBar extends React.Component {
                 target="_blank"
                 rel="noreferrer"
               >
-                <i className="fab fa-facebook-f fa-2x"></i>
+                <i className="fab fa-facebook-f fa-2x icons"></i>
               </a>
             </div>
           </div> 

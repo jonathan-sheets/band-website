@@ -17,7 +17,7 @@
   padding-right: 15px;
 }
 
-footer {
+#my-footer {
   width: 100%;
   height: 90px;
   position: absolute;
@@ -46,7 +46,7 @@ i {
   padding-right: 15px;
 }
 
-i:hover {
+.icons:hover {
   color: black;
   transition: .75s ease-in-out;
 }
