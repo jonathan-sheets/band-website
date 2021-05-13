@@ -48,7 +48,7 @@ i {
 
 .icons:hover {
   color: black;
-  transition: .75s ease-in-out;
+  transition: .5s ease-in-out;
 }
 
 .copyright {
