@@ -16,12 +16,12 @@ export default function App() {
       <div>
         <BrowserRouter>
         <Switch>
-          <Route component={Home} path="/" exact />
+          <Route component={Home} path="/" exact={true} />
           <Route component={About} path="/about" />
           <Route component={Music} path="/music" />
           <Route component={Photos} path="/photos" />
-          <Route component={Blog} path="/blog" />
-          <Route component={Article} path="/blog/:slug" exact />
+          <Route component={Blog} path="/blog" exact={true} />
+          <Route component={Article} path="/blog/:slug" exact={true} />
           <Route component={Video} path="/video" />
           <Route component={Shop} path="/merch" />
         </Switch>
