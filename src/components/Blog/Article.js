@@ -29,26 +29,26 @@ class Article extends React.Component {
     )
     .then(res => {
       this.setState({ post: res.data });
-      // const container = document.querySelector(".blog-post");
-      // let scr = container.querySelectorAll("script");
-      // scr.forEach(node => {
-      //   let parent = node.parentElement;
-      //   let d = document.createElement("script");
-      //   d.async = node.async;
-      //   d.src = node.src;
-      //   d.type = "text/javascript";
-      //   parent.insertBefore(d, node);
-      //   parent.removeChild(node);
-      //   d.onload = console.log(d);
-      // });
+      const container = document.querySelector(".blog-post");
+      let scr = container.querySelectorAll("script");
+      scr.forEach(node => {
+        let parent = node.parentElement;
+        let d = document.createElement("script");
+        d.async = node.async;
+        d.src = node.src;
+        d.type = "text/javascript";
+        parent.insertBefore(d, node);
+        parent.removeChild(node);
+        d.onload = console.log(d);
+      });
     })
     .catch(error => console.log(error));
   }
-  // parseOutScripts(content) {}
+  parseOutScripts(content) {}
 
   render() {
     // const content = this.removeUnicode(this.props.post.content);
-    // const title = this.removeUnicode(this.props.post.title);
+    const title = this.removeUnicode(this.state.post.title);
 
     if (this.state.post) {
       return (
@@ -63,7 +63,7 @@ class Article extends React.Component {
             ) : (
               ""
             )}
-            <h3 className="text-center">{this.state.post.title}</h3>
+            <h3 className="text-center">{title}</h3>
             <div className=".blog-post" dangerouslySetInnerHTML={{ __html: this.state.post.content }} />
           </div>
         </div>
