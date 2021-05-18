@@ -1,5 +1,10 @@
 import React from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import NavBar from '../NavBar/NavBar';
 
 class Article extends React.Component {
   constructor(props) {
@@ -9,51 +14,26 @@ class Article extends React.Component {
     };
   }
 
-  removeUnicode(string) {
-    if (string.indexOf("&#8217;") >= 0) {
-      return this.removeUnicode(string.replace("&#8217;", "'"));
-    } else {
-      return string
-        .replaceAll("<p>", "")
-        .replaceAll("[&hellip;]</p>", "...")
-        .replaceAll("&#8211;", "-")
-        .replaceAll("&amp;", "&")
-        .replaceAll("&nbsp;", " ");
-    }
-  }
-
   componentDidMount() {
     axios.get(
-      "https://public-api.wordpress.com/rest/v1/sites/apatheticblogposts.wordpress.com/posts/" +
+      "https://public-api.wordpress.com/rest/v1.1/sites/apatheticblogposts.wordpress.com/posts/slug:" +
         this.props.match.params.slug
     )
     .then(res => {
       this.setState({ post: res.data });
-      const container = document.querySelector(".blog-post");
-      let scr = container.querySelectorAll("script");
-      scr.forEach(node => {
-        let parent = node.parentElement;
-        let d = document.createElement("script");
-        d.async = node.async;
-        d.src = node.src;
-        d.type = "text/javascript";
-        parent.insertBefore(d, node);
-        parent.removeChild(node);
-        d.onload = console.log(d);
-      });
+      console.log(this.state.post);
     })
     .catch(error => console.log(error));
   }
-  parseOutScripts(content) {}
 
   render() {
-    // const content = this.removeUnicode(this.props.post.content);
-    const title = this.removeUnicode(this.state.post.title);
-
     if (this.state.post) {
       return (
-        <div className="blog">
           <div className="article">
+          <>
+          <NavBar />
+          </>
+            <h3 dangerouslySetInnerHTML={{ __html: this.state.post.title }} />
             {this.state.post.featured_image ? (
               <img
                 className="img-responsive webpic"
@@ -63,10 +43,11 @@ class Article extends React.Component {
             ) : (
               ""
             )}
-            <h3 className="text-center">{title}</h3>
-            <div className=".blog-post" dangerouslySetInnerHTML={{ __html: this.state.post.content }} />
+            <div className="blog-post" dangerouslySetInnerHTML={{ __html: this.state.post.content }} />
+            <Link to={`/blog`}>
+            <button className="btn">Back</button>
+            </Link>
           </div>
-        </div>
       );
     } else {
       return null;
