@@ -16,7 +16,7 @@ class Blog extends React.Component {
 
   componentDidMount() {
     axios.get(
-      "https://public-api.wordpress.com/rest/v1/sites/apatheticblogposts.wordpress.com/posts"
+      "https://public-api.wordpress.com/rest/v1.1/sites/apatheticblogposts.wordpress.com/posts/"
     ).then(res => {
       this.setState({ posts: res.data.posts });
       console.log(this.state.posts);
@@ -37,13 +37,11 @@ class Blog extends React.Component {
             </Col>
           </Row>
           <Container fluid id="content">
-              <Row>
+              <Row className="blog-excertps">
                 <Col>
-                  
-                  <div className="blog">
-                    {this.state.posts.map(post => <ArticlePreview post={post} />)}
+                  <div className="blog-preview">
+                    {this.state.posts.map(post => <ArticlePreview post={post} key={post.ID} />)}
                   </div>
-                  
                 </Col>
               </Row>    
           </Container>
