@@ -14,14 +14,6 @@ class Blog extends React.Component {
     };
   }
 
-  // removeUnicode(string) {
-  //   if (string.indexOf("&#8217;") >= 0) {
-  //     return this.removeUnicode(string.replace("&#8217;", "'"));
-  //   } else {
-  //     return string;
-  //   }
-  // }
-
   componentDidMount() {
     axios.get(
       "https://public-api.wordpress.com/rest/v1/sites/apatheticblogposts.wordpress.com/posts"
