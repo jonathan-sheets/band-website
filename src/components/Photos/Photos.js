@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Carousel } from 'react-responsive-carousel';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -19,6 +20,11 @@ import SolarSuperman from '../../img/SolarSuperman.png';
 import './Photos.css';
 
 class Photos extends React.Component {
+
+  componentDidMount() {
+    document.querySelector('body').scrollTo(0, 0);
+  }
+
   render() {
     return (
       <div id="photos">
@@ -117,6 +123,14 @@ class Photos extends React.Component {
                 </form>
                 <i className="fa fa-paypal fa-2x paypal" aria-hidden="true"></i>
               </div> 
+              <div className="donated">
+                <p>
+                  Already donated?  Check out your name on the
+                  <Link to={`/donors`}>
+                    <button className="btn wall-btn">Wall of fame</button>
+                  </Link>
+                </p>
+              </div>
             </Col>
           </Row>
         </Container>
