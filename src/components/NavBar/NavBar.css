@@ -46,6 +46,11 @@ i {
   padding-right: 15px;
 }
 
+.social-link {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
 .icons:hover {
   color: black;
   transition: .5s ease-in-out;
