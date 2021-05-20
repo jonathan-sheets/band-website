@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -6,6 +7,11 @@ import NavBar from '../NavBar/NavBar';
 import './Shop.css';
 
 class Shop extends React.Component {
+
+  componentDidMount() {
+    document.querySelector('body').scrollTo(0, 0);
+  }
+
   render() {
     let js = document.createElement("script");
     js.type = "text/javascript";
@@ -54,7 +60,14 @@ class Shop extends React.Component {
                 </form>
                 <i className="fa fa-paypal fa-2x paypal" aria-hidden="true"></i>
               </div> 
-              
+              <div className="donated">
+                <p>
+                  Already donated?  Check out your name on the
+                  <Link to={`/donors`}>
+                    <button className="btn wall-btn">Wall of fame</button>
+                  </Link>
+                </p>
+              </div>
             </Col>
           </Row>
         </Container>
