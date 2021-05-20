@@ -1,0 +1,58 @@
+#video {
+  position: relative;
+  min-height: 100vh;
+}
+
+#video-content {
+  max-width: 50%;
+}
+
+/* .video-text {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+} */
+
+.video-container {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+  border: 5px solid black;
+  box-shadow: 1px 1px 15px #FF4B2B;
+}
+
+.video-container iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+@media only screen and (max-width: 1200px) {
+  #video-content {
+    max-width: 70%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  #video-content {
+    max-width: 80%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #video-content {
+    max-width: 90%;
+  }
+  .video-text {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  #video-content {
+    max-width: 100%;
+  }
+}
