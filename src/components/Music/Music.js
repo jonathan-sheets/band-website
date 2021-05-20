@@ -1,11 +1,16 @@
 import React from 'react';
 import NavBar from '../NavBar/NavBar';
+import { Link } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import './Music.css';
 
 class Music extends React.Component {
+
+  componentDidMount() {
+    document.querySelector('body').scrollTo(0, 0);
+  }
 
   render() {
     return (
@@ -19,8 +24,8 @@ class Music extends React.Component {
               <h1 className="our-music">Our Music</h1>
             </Col>
           </Row>
-          <Container fluid id="content"> 
-            
+          <Container fluid id="music-content"> 
+            <div id="music-text-container">
               <Row>
                 <Col>
                   <div className="music-text">
@@ -30,6 +35,7 @@ class Music extends React.Component {
                   </div>
                 </Col>
               </Row>
+            </div>
               <Row>
                 <Col>
                   
@@ -83,7 +89,14 @@ class Music extends React.Component {
                 </form>
                 <i className="fa fa-paypal fa-2x paypal" aria-hidden="true"></i>
               </div> 
-              
+              <div className="donated">
+                <p>
+                  Already donated?  Check out your name on the
+                  <Link to={`/donors`}>
+                    <button className="btn wall-btn">Wall of fame</button>
+                  </Link>
+                </p>
+              </div>
             </Col>
           </Row>
         </Container>
