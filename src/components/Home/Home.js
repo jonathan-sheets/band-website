@@ -3,6 +3,7 @@ import NavBar from '../NavBar/NavBar';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { Link } from 'react-router-dom';
 import AWastedHymn from '../../img/AWastedHymn.png';
 import CoversTributes from '../../img/CoversTributes.png';
 import AmazonMusicBadge from '../../img/AmazonMusicBadge.png';
@@ -11,6 +12,11 @@ import BandcampLogo128 from '../../img/BandcampLogo128.png';
 import './Home.css';
 
 class Home extends React.Component {
+
+  componentDidMount() {
+    document.querySelector('body').scrollTo(0, 0);
+  }
+
   render() {
     return (
       <div id="home">
@@ -141,8 +147,15 @@ class Home extends React.Component {
                   <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
                 </form>
                 <i className="fa fa-paypal fa-2x paypal" aria-hidden="true"></i>
-              </div> 
-              
+              </div>
+              <div className="donated">
+                <p>
+                  Already donated?  Check out your name on the
+                  <Link to={`/donors`}>
+                    <button className="btn wall-btn">Wall of fame</button>
+                  </Link>
+                </p>
+              </div>
             </Col>
           </Row>
         </Container>
