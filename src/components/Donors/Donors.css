@@ -1,0 +1,107 @@
+#donors {
+  position: relative;
+  min-height: 100vh;
+}
+
+#donors-content {
+  width: 70%;
+}
+
+.our-music {
+  margin-bottom: -5px;
+}
+
+.music-text {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.text {
+  margin-top: -18px;
+  margin-bottom: 0;
+}
+
+#wall-of-fame {
+  box-shadow: 1px 1px 25px #DCE35B;
+  background-color: black;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+.wall-heading {
+  font-size: 40px;
+  letter-spacing: 3px;
+}
+
+.wall-of-fame {
+  font-family: 'Rock Salt', cursive;
+  font-size: 18px;
+  max-height: 800px;
+  padding-bottom: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  /* justify-content: space-around; */
+}
+
+.donor-name {
+  margin-top: 25px;
+  width: 250px;
+}
+
+.donor {
+  padding: 10px;
+  color: white;
+  animation: flicker 0.11s ease-in-out infinite alternate;
+  border: 0.2rem solid white;
+  border-radius: 1rem;
+  box-shadow: 0 0 .2rem white,
+              0 0 .2rem white,
+              0 0 1.4rem #45B649,
+              0 0 0.8rem #45B649,
+              /* 0 0 2.1rem #45B649, */
+              inset 0 0 1.3rem #45B649;
+}
+
+.donor-alt {
+  animation-delay: 0.2s;
+}
+
+@keyframes flicker {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    text-shadow: 
+      0 0 7px white,
+      0 0 10px #45B649,
+      0 0 21px #45B649,
+      0 0 42px #45B649,
+      0 0 92px #45B649;
+  }
+  20%, 24%, 55% {
+    text-shadow: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #donors-content {
+    width: 100%;
+  }
+  .wall-of-fame {
+    font-size: 14px;
+  }
+  .donor-name {
+    margin-top: 25px;
+    width: 210px;
+  }
+  .music-text {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 405px) {
+  .wall-heading {
+    font-size: 32px;
+    letter-spacing: 3px;
+  }
+}
