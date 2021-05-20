@@ -1,7 +1,6 @@
 import React from 'react';
 import { Nav } from 'react-bootstrap';
 import Navbar from 'react-bootstrap/Navbar';
-// import { NavHashLink } from 'react-router-hash-link';
 import ASLogoRed from '../../img/ASLogoRed.png'
 import './NavBar.css';
 
