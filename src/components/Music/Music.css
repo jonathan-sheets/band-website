@@ -3,6 +3,10 @@
   min-height: 100vh;
 }
 
+#music-content {
+  width: 70%;
+}
+
 .our-music {
   margin-top: 5px;
 }
@@ -51,5 +55,12 @@
   .audio-container {
     margin-left: -65px;
     margin-right: -65px;
+  }
+  .music-text {
+    font-size: 14px;
+  }
+  #music-text-container {
+    margin-left: -50px;
+    margin-right: -50px;
   }
 }
