@@ -1,10 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import NavBar from '../NavBar/NavBar';
 import ArticlePreview from './ArticlePreview';
+import './Blog.css';
 
 class Blog extends React.Component {
   constructor(props) {
@@ -15,6 +17,7 @@ class Blog extends React.Component {
   }
 
   componentDidMount() {
+    document.querySelector('body').scrollTo(0, 0);
     axios.get(
       "https://public-api.wordpress.com/rest/v1.1/sites/apatheticblogposts.wordpress.com/posts/"
     ).then(res => {
@@ -36,14 +39,16 @@ class Blog extends React.Component {
               <h1>BLog</h1>
             </Col>
           </Row>
-          <Container fluid id="content">
-              <Row className="blog-excertps">
+          <Container fluid id="content" className="blog-content">
+            
+              <Row>
                 <Col>
                   <div className="blog-preview">
                     {this.state.posts.map(post => <ArticlePreview post={post} key={post.ID} />)}
                   </div>
                 </Col>
-              </Row>    
+              </Row> 
+              
           </Container>
           <Row>
             <Col className="donate-content">
@@ -73,7 +78,14 @@ class Blog extends React.Component {
                 </form>
                 <i className="fa fa-paypal fa-2x paypal" aria-hidden="true"></i>
               </div> 
-              
+              <div className="donated">
+                <p>
+                  Already donated?  Check out your name on the
+                  <Link to={`/donors`}>
+                    <button className="btn wall-btn">Wall of fame</button>
+                  </Link>
+                </p>
+              </div>
             </Col>
           </Row>
         </Container>
