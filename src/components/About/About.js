@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import NavBar from '../NavBar/NavBar';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -7,6 +8,11 @@ import BandPhoto from '../../img/BandPhoto.png';
 import './About.css';
 
 class About extends React.Component {
+
+  componentDidMount() {
+    document.querySelector('body').scrollTo(0, 0);
+  }
+
   render() {
     return (
       <div id="about">
@@ -45,7 +51,7 @@ class About extends React.Component {
                     </p>
                     <p><span>Apathetic Superstar</span> is:</p>
                     {/* eslint-disable-next-line react/jsx-no-comment-textnodes */}
-                    <p><span>// Jon Sheets //</span> Guitars, Bass, Drums, Piano, Synths, Vocals</p>
+                    <p><span>// Jonathan Sheets //</span> Guitars, Bass, Drums, Piano, Synths, Vocals</p>
                     {/* eslint-disable-next-line react/jsx-no-comment-textnodes */}
                     <p><span>// Anna Sheets //</span> Vocals</p>
                   </div>
@@ -81,7 +87,14 @@ class About extends React.Component {
                 </form>
                 <i className="fa fa-paypal fa-2x paypal" aria-hidden="true"></i>
               </div> 
-              
+              <div className="donated">
+                <p>
+                  Already donated?  Check out your name on the
+                  <Link to={`/donors`}>
+                    <button className="btn wall-btn">Wall of fame</button>
+                  </Link>
+                </p>
+              </div>
             </Col>
           </Row>
         </Container>
