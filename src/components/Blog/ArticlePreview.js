@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './Blog.css';
 
 class ArticlePreview extends React.Component {
   removeUnicode(string) {
@@ -21,21 +22,28 @@ class ArticlePreview extends React.Component {
 
     if (this.props.post) {
       return (
-        <div className="article">
-          <h3 className="text-center">{title}</h3>
-            {this.props.post.featured_image ? (
-              <img
-                className="img-responsive webpic"
-                alt="article header"
-                src={this.props.post.featured_image}
-              />
-            ) : (
-              ""
-            )}
-          <div className="article-content">{excerpt}</div>
-            <Link to={`/blog/${this.props.post.slug}`}>
-              <button className="btn">Read More</button>
-            </Link>
+        <div className="excerpts-container">
+          <div className="excerpts">
+            <h3 className="excerpt-title">{title}</h3>
+              {this.props.post.featured_image ? (
+                <img
+                  className="img-responsive webpic"
+                  alt="article header"
+                  src={this.props.post.featured_image}
+                />
+              ) : (
+                ""
+              )}
+            <div className="excerpt-content">{excerpt}
+              <div className="read-more">
+                
+                  <Link to={`/blog/${this.props.post.slug}`}>
+                    <button className="btn read-more-btn">Read More</button>
+                  </Link>
+                
+              </div>
+            </div>
+          </div>
         </div>
       );
     } else {
