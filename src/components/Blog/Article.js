@@ -5,6 +5,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import NavBar from '../NavBar/NavBar';
+import './Blog.css';
 
 class Article extends React.Component {
   constructor(props) {
@@ -15,6 +16,7 @@ class Article extends React.Component {
   }
 
   componentDidMount() {
+    document.querySelector('body').scrollTo(0, 0);
     axios.get(
       "https://public-api.wordpress.com/rest/v1.1/sites/apatheticblogposts.wordpress.com/posts/slug:" +
         this.props.match.params.slug
@@ -29,24 +31,39 @@ class Article extends React.Component {
   render() {
     if (this.state.post) {
       return (
-          <div className="article">
-          <>
-          <NavBar />
-          </>
-            <h3 dangerouslySetInnerHTML={{ __html: this.state.post.title }} />
-            {this.state.post.featured_image ? (
-              <img
-                className="img-responsive webpic"
-                alt="article header"
-                src={this.state.post.featured_image}
-              />
-            ) : (
-              ""
-            )}
-            <div className="blog-post" dangerouslySetInnerHTML={{ __html: this.state.post.content }} />
-            <Link to={`/blog`}>
-            <button className="btn">Back</button>
-            </Link>
+          <div id="article">
+            <>
+            <NavBar />
+            </>
+            <Container fluid className="about full-article">
+              <Row className="about-band">
+                <Col>
+                  <h3 className="blog-title" dangerouslySetInnerHTML={{ __html: this.state.post.title }} />
+                  {this.state.post.featured_image ? (
+                    <img
+                      className="img-responsive webpic"
+                      alt="article header"
+                      src={this.state.post.featured_image}
+                    />
+                  ) : (
+                    ""
+                  )}
+                </Col>
+              </Row>
+              <Container fluid id="blog-content">
+                <Row>
+                  <Col>
+                    <div className="blog-post" dangerouslySetInnerHTML={{ __html: this.state.post.content }} />
+                    <Link to={`/blog`}>
+                      <button className=" btn back-btn">
+                        Back
+                        &#8617;
+                      </button>
+                    </Link>
+                  </Col>
+                </Row>  
+              </Container>
+            </Container>
           </div>
       );
     } else {
