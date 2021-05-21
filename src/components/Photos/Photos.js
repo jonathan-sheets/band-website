@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Carousel } from 'react-responsive-carousel';
+import LazyLoad from 'react-lazyload';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -41,6 +42,7 @@ class Photos extends React.Component {
             <Row>
               <Col md="auto">
                 <div className="carousel-container">
+                  <LazyLoad >
                   <Carousel>
                     <div className="band-images">
                       <img src={JonPlaying} alt="Jon playing electric guitar and singing" />
@@ -91,6 +93,7 @@ class Photos extends React.Component {
                       {/* <p className="legend">Guitar Hero Counts.. Right?</p> */}
                     </div>
                   </Carousel>
+                  </LazyLoad>
                 </div>
               </Col>
             </Row>
