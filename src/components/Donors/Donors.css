@@ -36,19 +36,20 @@
 
 .wall-of-fame {
   font-family: 'Rock Salt', cursive;
-  font-size: 18px;
-  max-height: 800px;
-  padding-bottom: 200px;
+  font-size: 16px;
+  /* max-height: 450px; */
+  padding-bottom: 100px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
-  /* justify-content: space-around; */
+  justify-content: space-around;
 }
 
 .donor-name {
   margin-top: 25px;
-  width: 250px;
+  max-width: 250px;
+  min-width: 220px;
 }
 
 .donor {
@@ -67,6 +68,14 @@
 
 .donor-alt {
   animation-delay: 0.2s;
+}
+
+.donor-alt2 {
+  animation-delay: 0.3s;
+}
+
+.donor-alt3 {
+  animation-delay: 0.35s;
 }
 
 @keyframes flicker {
@@ -92,7 +101,7 @@
   }
   .donor-name {
     margin-top: 25px;
-    width: 210px;
+    /* width: 210px; */
   }
   .music-text {
     font-size: 14px;
