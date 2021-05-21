@@ -58,7 +58,7 @@ class Blog extends React.Component {
               </div>
               <div className="donate-action">
                 <i className="fa fa-paypal fa-2x paypal" aria-hidden="true"></i>
-                <form action="https://www.paypal.com/donate" method="post" target="_blank">
+                <form action="https://www.paypal.com/donate" method="post">
                   <input 
                     type="hidden" 
                     name="hosted_button_id" 
