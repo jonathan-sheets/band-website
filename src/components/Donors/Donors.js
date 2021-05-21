@@ -55,6 +55,41 @@ class Donors extends React.Component {
                         Charles Spencer
                       </p>
                     </div>
+                    <div className="donor-name">
+                      <p className="donor donor-alt2">
+                        Mantis Toboggan MD
+                      </p>
+                    </div>
+                    <div className="donor-name">
+                      <p className="donor donor">
+                        Art Vandelay
+                      </p>
+                    </div>
+                    <div className="donor-name">
+                      <p className="donor donor-alt3">
+                        Mlepclaynos
+                      </p>
+                    </div>
+                    <div className="donor-name">
+                      <p className="donor donor-alt">
+                        Peter Venkman
+                      </p>
+                    </div>
+                    <div className="donor-name">
+                      <p className="donor donor">
+                        Egon Spengler
+                      </p>
+                    </div>
+                    <div className="donor-name">
+                      <p className="donor donor-alt3">
+                        Winston Zeddemore
+                      </p>
+                    </div>
+                    <div className="donor-name">
+                      <p className="donor donor-alt2">
+                        Ray Stantz
+                      </p>
+                    </div>
                   </div>
                 </Col>
               </Row>
