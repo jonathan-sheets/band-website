@@ -1,6 +1,7 @@
 #donors {
   position: relative;
   min-height: 100vh;
+  scroll-behavior: smooth;
 }
 
 #donors-content {
