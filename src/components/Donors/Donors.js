@@ -56,6 +56,11 @@ class Donors extends React.Component {
                       </p>
                     </div>
                     <div className="donor-name">
+                      <p className="donor donor-alt3">
+                        Burt Sheets
+                      </p>
+                    </div>
+                    <div className="donor-name">
                       <p className="donor donor-alt2">
                         Mantis Toboggan MD
                       </p>
