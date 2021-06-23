@@ -1,6 +1,10 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/7b29abbc-9573-4764-aabc-1d7050edffab/deploy-status)](https://app.netlify.com/sites/apatheticsuperstar/deploys)
 
-# Getting Started with Create React App
+# Band Website
+
+## [Live site here!](https://apatheticsuperstar.com)
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
