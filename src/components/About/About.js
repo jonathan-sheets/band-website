@@ -4,7 +4,7 @@ import NavBar from '../NavBar/NavBar';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import BandPhoto from '../../img/BandPhoto.png';
+import BandPhotoCropped from '../../img/BandPhoto.png';
 import './About.css';
 
 class About extends React.Component {
@@ -29,7 +29,7 @@ class About extends React.Component {
               <Row>
                 <Col>
                   <div className="band-photo">
-                    <img id="band-photo" src={BandPhoto} alt="the band"></img>
+                    <img id="band-photo" src={BandPhotoCropped} alt="the band"></img>
                   </div>
                 </Col>
               </Row>  
