@@ -40,9 +40,9 @@ class Home extends React.Component {
                   <div className="titles">
                     <p><span>Your Promise</span></p>
                     </div>
-                    <div className="info-text">
+                    {/* <div className="info-text">
                     <p>A cover of the song Your Promise by Mest</p>
-                    </div>
+                    </div> */}
                     <div className="album-art">
                       <img id="wasted-hymn" src={YourPromise} alt="a wasted hymn single artwork"></img>
                     </div>
@@ -79,9 +79,9 @@ class Home extends React.Component {
                     <div className="titles">
                     <p><span>A Wasted Hymn</span></p>
                     </div>
-                    <div className="info-text">
+                    {/* <div className="info-text">
                     <p>Our cover of the acoustic version by Architects</p>
-                    </div>
+                    </div> */}
                     <div className="album-art">
                       <img id="wasted-hymn" src={AWastedHymn} alt="a wasted hymn single artwork"></img>
                     </div>
@@ -123,9 +123,9 @@ class Home extends React.Component {
                   <div className="titles">
                   <p><span>Covers & Tributes</span></p>
                   </div>
-                  <div className="info-text">
+                  {/* <div className="info-text">
                     <p>Songs by The Offspring, AFI, Chevelle, Marilyn Manson, Nine Inch Nails, and Linkin Park</p>
-                  </div>
+                  </div> */}
                   <div className="album-art">
                     <img id="covers-tributes" src={CoversTributes} alt="covers & tributes album artwork"></img>
                   </div>
