@@ -58,7 +58,7 @@ class Home extends React.Component {
                     </div>
                     <div className="itunes-badge">
                     <a
-                        href="#"
+                        href="https://www.apple.com"
                         target="_blank"
                         rel="noreferrer"
                     >
@@ -67,7 +67,7 @@ class Home extends React.Component {
                     </div>
                     <div className="amazon-badge">
                       <a 
-                        href="#"
+                        href="https://www.amazon.com"
                         target="_blank"
                         rel="noreferrer"
                       >
