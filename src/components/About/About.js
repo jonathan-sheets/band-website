@@ -4,7 +4,7 @@ import NavBar from '../NavBar/NavBar';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import BandPhotoCropped from '../../img/BandPhoto.png';
+import BandPhotoCropped from '../../img/BandPhotoCropped.png';
 import './About.css';
 
 class About extends React.Component {
@@ -38,22 +38,24 @@ class About extends React.Component {
                   
                   <div className="about-text">
                     <p>
-                      Denver based and reluctant to commit to any specific genre, post metalcore act <span>Apathetic Superstar</span> have a unique approach to
-                      making heavy music.  The driving force behind this duo is a desire to create catchy, crushing riffs blended seamlessly with 
-                      cinematic melodies and serene atmospheres.  A heavy importance is also placed on lyrical content with both members refusing to
+                      Denver based and reluctant to commit to any specific genre, post metalcore act <span>Apathetic Superstar</span> has a unique approach to
+                      making heavy music.  Although the lineup has recently changed, the driving force behind this band continues to be a desire to create catchy, crushing riffs blended seamlessly with 
+                      cinematic melodies and serene atmospheres.  A heavy importance is also placed on lyrical content and refusing to
                       settle for anything generic.
                     </p>
                     <p>
-                      Jon and Anna formed <span>Apathetic Superstar</span> in 2015 as a husband and wife duo making covers of meaningful songs from their youth.
-                      Their debut EP "Covers & Tributes" was released on December 6th, 2019.  While these cover songs contain some elements of their
-                      signature sound, they are meant more to show the sonic diversity the band is capable of.  They are currently writing and recording a full-length album titled "A Light In the Darkness."  All music that the band creates is recorded, mixed, and mastered by Jon in his
-                      home studio.
+                      <span>Apathetic Superstar</span> was formed in 2015 with Jon wanting to make covers of meaningful songs from his youth.
+                      The debut EP "Covers & Tributes" was released on December 6th, 2019.  While these cover songs contain some elements of the band's
+                      signature sound, they are meant more to show the sonic diversity the band is capable of.
+                    </p>
+                    <p>
+                      Now, as the lone member, Jon will release a new cover song on March 25, 2022.  This song marks the re-birth of the band and ushers in a new era and direction.  Jon does all recording, mixing, and mastering himself in his home studio.  While the creation process is slow, you'll want to stay tuned for what's coming in the future.
                     </p>
                     <p><span>Apathetic Superstar</span> is:</p>
                     {/* eslint-disable-next-line react/jsx-no-comment-textnodes */}
                     <p><span>// Jonathan Sheets //</span> Guitars, Bass, Drums, Piano, Synths, Vocals</p>
                     {/* eslint-disable-next-line react/jsx-no-comment-textnodes */}
-                    <p><span>// Anna Sheets //</span> Vocals</p>
+                    {/* <p><span>// Anna Sheets //</span> Vocals</p> */}
                   </div>
                   
                 </Col>
@@ -62,8 +64,8 @@ class About extends React.Component {
           <Row>
             <Col className="donate-content">
               <div className="donate">
-                <p>If you like our music and want to hear more, consider being a hero and donate to the cause.
-                   All donations go through PayPal and help us cover licensing and distribution costs.</p>
+                <p>If you like my music and want to hear more, consider being a hero and donate to the cause.
+                   All donations go through PayPal and help cover licensing and distribution costs.</p>
               </div>
               <div className="donate-action">
                 <i className="fa fa-paypal fa-2x paypal" aria-hidden="true"></i>

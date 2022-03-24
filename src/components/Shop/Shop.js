@@ -35,8 +35,8 @@ class Shop extends React.Component {
           <Row>
             <Col>
               <div className="donate">
-                <p>If you like our music and want to hear more, consider being a hero and donate to the cause.
-                   All donations go through PayPal and help us cover licensing and distribution costs.</p>
+                <p>If you like my music and want to hear more, consider being a hero and donate to the cause.
+                   All donations go through PayPal and help cover licensing and distribution costs.</p>
               </div>
               <div className="donate-action">
                 <i className="fa fa-paypal fa-2x paypal" aria-hidden="true"></i>

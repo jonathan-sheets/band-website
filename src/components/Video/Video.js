@@ -29,10 +29,36 @@ class Video extends React.Component {
               <Col>  
                 <div className="video-text">
                   <p>
-                    Here is the video we made for our dog, Chester, who passed away suddenly and unexpectedly.  It features our cover of "A Wasted Hymn" by Architects.
+                    A video of me playing a full setlist of some of my favorite songs by some of my favorite bands.
                   </p>
+                </div>
+              </Col>
+            </Row>
+            <Row>
+              <Col>
+                <div className="video-container">
+                  <iframe 
+                    className="video-iframe"
+                    width="560" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/F-2AP5TQ5-Y"
+                    title="YouTube video player" 
+                    frameBorder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowFullScreen
+                  >
+                  </iframe>
+                </div>
+              </Col>
+            </Row>    
+          </Container>
+          <br />
+          <Container fluid id="video-content"> 
+            <Row>
+              <Col>  
+                <div className="video-text">
                   <p>
-                    We will add more videos for our original songs as soon as we can.
+                    This is the video we made for our dog, Chester, who passed away suddenly and unexpectedly.  It features our cover of "A Wasted Hymn" by Architects.
                   </p>
                 </div>
               </Col>
@@ -58,8 +84,8 @@ class Video extends React.Component {
           <Row>
             <Col className="donate-content">
               <div className="donate">
-                <p>If you like our music and want to hear more, consider being a hero and donate to the cause.
-                   All donations go through PayPal and help us cover licensing and distribution costs.</p>
+                <p>If you like my music and want to hear more, consider being a hero and donate to the cause.
+                   All donations go through PayPal and help cover licensing and distribution costs.</p>
               </div>
               <div className="donate-action">
                 <i className="fa fa-paypal fa-2x paypal" aria-hidden="true"></i>

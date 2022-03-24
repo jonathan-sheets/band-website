@@ -21,7 +21,7 @@ class Music extends React.Component {
         <Container fluid className="about">
           <Row className="about-band">
             <Col>
-              <h1 className="our-music">Our Music</h1>
+              <h1 className="our-music">Music</h1>
             </Col>
           </Row>
           <Container fluid id="music-content"> 
@@ -30,7 +30,7 @@ class Music extends React.Component {
                 <Col>
                   <div className="music-text">
                     <p>
-                      Due to licensing restrictions we are unable to post our cover songs here.  Below are some previously un-released songs from before Anna joined the band.
+                      Due to licensing restrictions I am unable to post cover songs here.  Below are some previously un-released songs from 2011-2013.
                     </p>
                   </div>
                 </Col>
@@ -64,8 +64,8 @@ class Music extends React.Component {
           <Row>
             <Col className="donate-content">
               <div className="donate">
-                <p>If you like our music and want to hear more, consider being a hero and donate to the cause.
-                   All donations go through PayPal and help us cover licensing and distribution costs.</p>
+                <p>If you like my music and want to hear more, consider being a hero and donate to the cause.
+                   All donations go through PayPal and help cover licensing and distribution costs.</p>
               </div>
               <div className="donate-action">
                 <i className="fa fa-paypal fa-2x paypal" aria-hidden="true"></i>

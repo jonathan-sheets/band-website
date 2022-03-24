@@ -6,15 +6,14 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import NavBar from '../NavBar/NavBar';
+import BandPhotoCropped from '../../img/BandPhotoCropped.png';
+import Studio from '../../img/Studio.png';
+import JonVocalBooth from '../../img/JonVocalBooth.png';
 import AcousticTracking from '../../img/AcousticTracking.png';
-import AnnaBooth from '../../img/AnnaBooth.png';
-import AnnaSinging from '../../img/AnnaSinging.png';
 import BassTracking from '../../img/BassTracking.png';
 import BassTracking2 from '../../img/BassTracking2.png';
-import GuitarHero from '../../img/GuitarHero.png';
 import JonAcoustic from '../../img/JonAcoustic.png';
 import JonPlaying from '../../img/JonPlaying.png';
-import MT15 from '../../img/MT15.png';
 import QuadCortex from '../../img/QuadCortex.png';
 import RecordingMess from '../../img/RecordingMess.png';
 import SolarSuperman from '../../img/SolarSuperman.png';
@@ -44,53 +43,38 @@ class Photos extends React.Component {
                 <div className="carousel-container">
                   <LazyLoad >
                   <Carousel>
+                  <div className="band-images">
+                      <img src={BandPhotoCropped} alt="Jon playing electric guitar and singing" />
+                    </div>
                     <div className="band-images">
                       <img src={JonPlaying} alt="Jon playing electric guitar and singing" />
-                      {/* <p className="legend">Practice</p> */}
                     </div>
                     <div className="band-images">
-                      <img src={AnnaBooth} alt="Anna recording in the vocal booth" />
-                      {/* <p className="legend">Anna Recording Vocals</p> */}
+                      <img src={Studio} alt="recording acoustic guitar"/>
                     </div>
                     <div className="band-images">
-                      <img src={MT15} alt="PRS MT-15 amp head" />
-                      {/* <p className="legend">Reamping</p> */}
+                      <img src={JonVocalBooth} alt="recording vocals"/>
                     </div>
                     <div className="band-images">
                       <img src={AcousticTracking} alt="recording acoustic guitar"/>
-                      {/* <p className="legend">Recording Acoustic Guitar</p> */}
-                    </div>
-                    <div className="band-images">
-                      <img src={AnnaSinging} alt="Anna recording vocals" />
-                      {/* <p className="legend">Anna Recording Vocals</p> */}
                     </div>
                     <div className="band-images">
                       <img src={BassTracking} alt="Jon recording bass guitar" />
-                      {/* <p className="legend">Recording Bass</p> */}
                     </div>
                     <div className="band-images">
                       <img src={BassTracking2} alt="Jon recording bass guitar" />
-                      {/* <p className="legend">Recording Bass</p> */}
                     </div>
                     <div className="band-images">
                       <img src={JonAcoustic} alt="Jon playing acoustic and singing" />
-                      {/* <p className="legend">Unplugged</p> */}
                     </div>
                     <div className="band-images">
                       <img src={QuadCortex} alt="Jon testing out his Quad Cortex" />
-                      {/* <p className="legend">Playing with new toys</p> */}
                     </div>
                     <div className="band-images">
                       <img src={RecordingMess} alt="Guitar, apms, and cables during recording" />
-                      {/* <p className="legend">Coma White recording session</p> */}
                     </div>
                     <div className="band-images">
                       <img src={SolarSuperman} alt="Jon playing with his new Solar guitar" />
-                      {/* <p className="legend">Playing with new toys</p> */}
-                    </div>
-                    <div className="band-images">
-                      <img src={GuitarHero} alt="Jon and Anna playing guitar hero" />
-                      {/* <p className="legend">Guitar Hero Counts.. Right?</p> */}
                     </div>
                   </Carousel>
                   </LazyLoad>
@@ -101,8 +85,8 @@ class Photos extends React.Component {
           <Row>
             <Col className="donate-content">
               <div className="donate">
-                <p>If you like our music and want to hear more, consider being a hero and donate to the cause.
-                   All donations go through PayPal and help us cover licensing and distribution costs.</p>
+                <p>If you like my music and want to hear more, consider being a hero and donate to the cause.
+                   All donations go through PayPal and help cover licensing and distribution costs.</p>
               </div>
               <div className="donate-action">
                 <i className="fa fa-paypal fa-2x paypal" aria-hidden="true"></i>

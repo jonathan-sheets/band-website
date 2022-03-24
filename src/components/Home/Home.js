@@ -4,6 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { Link } from 'react-router-dom';
+import YourPromise from '../../img/YourPromise.png';
 import AWastedHymn from '../../img/AWastedHymn.png';
 import CoversTributes from '../../img/CoversTributes.png';
 import AmazonMusicBadge from '../../img/AmazonMusicBadge.png';
@@ -31,6 +32,91 @@ class Home extends React.Component {
           </Row>
           <Container fluid id="content">
             <Row>
+
+            <Col>
+                <div className="singles">
+                  <h4>Singles</h4>
+
+                  <div className="titles">
+                    <p><span>Your Promise</span></p>
+                    </div>
+                    <div className="info-text">
+                    <p>A cover of the song Your Promise by Mest</p>
+                    </div>
+                    <div className="album-art">
+                      <img id="wasted-hymn" src={YourPromise} alt="a wasted hymn single artwork"></img>
+                    </div>
+                    <div className="store-links">
+                    <div className="bandcamp-badge">
+                      <a
+                        href="https://apatheticsuperstar.bandcamp.com/track/your-promise"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <img src={BandcampLogo128} className="bandcamp" alt="Get it on Bandcamp" width="106px"></img>
+                      </a>
+                    </div>
+                    <div className="itunes-badge">
+                    <a
+                        href="#"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                      <img src={iTunesStoreBuyBadge} className="iTunes" alt="Buy it on apple music" width="100px"></img>
+                    </a>
+                    </div>
+                    <div className="amazon-badge">
+                      <a 
+                        href="#"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <img src={AmazonMusicBadge} className="amazon" alt="get it on amazon music" width="106px"></img>
+                      </a>
+                    </div>
+                  </div>
+
+                    <div className="titles">
+                    <p><span>A Wasted Hymn</span></p>
+                    </div>
+                    <div className="info-text">
+                    <p>Our cover of the acoustic version by Architects</p>
+                    </div>
+                    <div className="album-art">
+                      <img id="wasted-hymn" src={AWastedHymn} alt="a wasted hymn single artwork"></img>
+                    </div>
+                    <div className="store-links">
+                    <div className="bandcamp-badge">
+                      <a
+                        href="https://apatheticsuperstar.bandcamp.com/album/a-wasted-hymn"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <img src={BandcampLogo128} className="bandcamp" alt="Get it on Bandcamp" width="106px"></img>
+                      </a>
+                    </div>
+                    <div className="itunes-badge">
+                    <a
+                        href="https://music.apple.com/us/album/a-wasted-hymn-single/1505096800"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                      <img src={iTunesStoreBuyBadge} className="iTunes" alt="Buy it on apple music" width="100px"></img>
+                    </a>
+                    </div>
+                    <div className="amazon-badge">
+                      <a 
+                        href="https://www.amazon.com/Wasted-Hymn-Apathetic-Superstar/dp/B086HV62KK/ref=sr_1_2?dchild=1&keywords=Apathetic+Superstar&qid=1619803510&s=dmusic&search-type=ss&sr=1-2"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <img src={AmazonMusicBadge} className="amazon" alt="get it on amazon music" width="106px"></img>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </Col>
+
               <Col>
                 <div className="albums">
                   <h4>Albums / EPs</h4>
@@ -75,56 +161,14 @@ class Home extends React.Component {
                 </div>
               </Col>
               
-              <Col>
-                <div className="singles">
-                  <h4>Singles</h4>
-                    <div className="titles">
-                    <p><span>A Wasted Hymn</span></p>
-                    </div>
-                    <div className="info-text">
-                    <p>Our cover of the acoustic version by Architects</p>
-                  </div>
-                  <div className="album-art">
-                    <img id="wasted-hymn" src={AWastedHymn} alt="a wasted hymn single artwork"></img>
-                  </div>
-                  <div className="store-links">
-                    <div className="bandcamp-badge">
-                      <a
-                        href="https://apatheticsuperstar.bandcamp.com/album/a-wasted-hymn"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <img src={BandcampLogo128} className="bandcamp" alt="Get it on Bandcamp" width="106px"></img>
-                      </a>
-                    </div>
-                    <div className="itunes-badge">
-                    <a
-                        href="https://music.apple.com/us/album/a-wasted-hymn-single/1505096800"
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                      <img src={iTunesStoreBuyBadge} className="iTunes" alt="Buy it on apple music" width="100px"></img>
-                    </a>
-                    </div>
-                    <div className="amazon-badge">
-                      <a 
-                        href="https://www.amazon.com/Wasted-Hymn-Apathetic-Superstar/dp/B086HV62KK/ref=sr_1_2?dchild=1&keywords=Apathetic+Superstar&qid=1619803510&s=dmusic&search-type=ss&sr=1-2"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <img src={AmazonMusicBadge} className="amazon" alt="get it on amazon music" width="106px"></img>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </Col>
+              
             </Row>
           </Container>
           <Row>
             <Col className="donate-content">
               <div className="donate">
-                <p>If you like our music and want to hear more, consider being a hero and donate to the cause.
-                   All donations go through PayPal and help us cover licensing and distribution costs.</p>
+                <p>If you like my music and want to hear more, consider being a hero and donate to the cause.
+                   All donations go through PayPal and help cover licensing and distribution costs.</p>
               </div>
               <div className="donate-action">
                 <i className="fa fa-paypal fa-2x paypal" aria-hidden="true"></i>
