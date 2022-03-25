@@ -58,7 +58,7 @@ class Home extends React.Component {
                     </div>
                     <div className="itunes-badge">
                     <a
-                        href="https://www.apple.com"
+                        href="https://music.apple.com/us/album/your-promise-single/1614297269"
                         target="_blank"
                         rel="noreferrer"
                     >
@@ -67,7 +67,7 @@ class Home extends React.Component {
                     </div>
                     <div className="amazon-badge">
                       <a 
-                        href="https://www.amazon.com"
+                        href="https://www.amazon.com/music/player/albums/B09VJJRDW3?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&trackAsin=B09VJJZ5C4&ref=sr_1_8&s=dmusic&keywords=apathetic+superstar&crid=2R8WGG8KAJTQ1&sprefix=%2Cdigital-music%2C124&qid=1648209956&sr=1-8"
                         target="_blank"
                         rel="noreferrer"
                       >
