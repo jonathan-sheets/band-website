@@ -29,6 +29,34 @@ class Video extends React.Component {
               <Col>  
                 <div className="video-text">
                   <p>
+                    The music video I made for my cover of "Your Promise" by MEST.
+                  </p>
+                </div>
+              </Col>
+            </Row>
+            <Row>
+              <Col>
+                <div className="video-container">
+                <iframe 
+                  className="video-iframe"
+                  width="560" 
+                  height="315" 
+                  src="https://www.youtube.com/embed/V2w8oJU0Wx8" 
+                  title="YouTube video player" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+                >
+                </iframe>
+                </div>
+              </Col>
+            </Row>    
+          </Container>
+          <br />
+          <Container fluid id="video-content"> 
+            <Row>
+              <Col>  
+                <div className="video-text">
+                  <p>
                     A video of me playing a full setlist of some of my favorite songs by some of my favorite bands.
                   </p>
                 </div>
